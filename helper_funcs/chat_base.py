@@ -11,10 +11,7 @@ logger = logging.getLogger(__name__)
 import os
 
 # the secret configuration specific things
-if bool(os.environ.get("WEBHOOK", False)):
-    from config import Config
-else:
-    from config import Config
+from config import Config
 
 # the Strings used for this "thing"
 from translation import Translation
